@@ -33,7 +33,7 @@ pipeline {
             steps {
                 echo 'Deploying...'
                 // Run the java programm with an example argument
-                sh 'java -cp target/your-app-1.0-SNAPSHOT.jar com.apasoft.ToUpper ${Frase}'
+                sh 'java -cp target/your-app-1.0-SNAPSHOT.jar com.apasoft.ToUpper "${Frase}"'
             }
         }
     }
